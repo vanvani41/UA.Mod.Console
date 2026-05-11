@@ -5,8 +5,8 @@
     /// </summary>
     internal class PluginInfo
     {
-        public const string GUID = "com.goldentrophy.gorillatag.console";
-        public const string Name = "Console";
-        public const string Version = "3.0.7";
+        public const string GUID = "com.vanvani41.gorillatag.uamodconsole";
+        public const string Name = "UA Mod Console";
+        public const string Version = "1.0.0";
     }
 }
