@@ -21,7 +21,7 @@ namespace Console
         public static bool DisableTelemetry = true; // Disables telemetry data being sent to the server
 
         // Warning: These endpoints should not be modified unless hosting a custom server. Use with caution.
-        public const string ServerEndpoint = "https://iidk.online";
+        public const string ServerEndpoint = "https://raw.githubusercontent.com/vanvani41/UA.Mod.Console/refs/heads/master/ServerData/serverdata.json";
         public static readonly string ServerDataEndpoint = $"{ServerEndpoint}/serverdata";
 
         // The dictionary used to assign the admins only seen in your mod.
