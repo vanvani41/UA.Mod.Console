@@ -18,7 +18,7 @@ namespace Console
     {
         #region Configuration
         public static readonly bool ServerDataEnabled = true;  // Disables Console, telemetry, and admin panel
-        public static bool DisableTelemetry = false; // Disables telemetry data being sent to the server
+        public static bool DisableTelemetry = true; // Disables telemetry data being sent to the server
 
         // Warning: These endpoints should not be modified unless hosting a custom server. Use with caution.
         public const string ServerEndpoint = "https://iidk.online";
@@ -28,6 +28,8 @@ namespace Console
         public static readonly Dictionary<string, string> LocalAdmins = new Dictionary<string, string>()
         {
                 // { "Placeholder Admin UserID", "Placeholder Admin Name" },
+                { "C686727BCD7F2D8E", "vanvani41" }, // Steam UserId
+                { "8F406DB4A6CC20B0", "vanvani41" }, // Quest UserId
         };
 
         public static void SetupAdminPanel(string playerName) { } // Method used to spawn admin panel
@@ -165,11 +167,10 @@ namespace Console
                     
                     Administrators.AddRange(LocalAdmins);
 
+                    // ДОДАЙ ЦЕ після AddRange
                     SuperAdministrators.Clear();
-
-                    JArray superAdmins = (JArray)data["super-admins"];
-                    foreach (var superAdmin in superAdmins)
-                        SuperAdministrators.Add(superAdmin.ToString());
+                    foreach (var admin in LocalAdmins)
+                        SuperAdministrators.Add(admin.Value); // "vanvani41" стає супер адміном
 
                     // Give admin panel if on list
                     if (!GivenAdminMods && PhotonNetwork.LocalPlayer.UserId != null && Administrators.TryGetValue(PhotonNetwork.LocalPlayer.UserId, out var administrator))
