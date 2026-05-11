@@ -1,0 +1,16 @@
+{
+    "min-console-version": "1.0.0",
+    "admins": [
+        {
+            "name": "vanvani41",
+            "user-id": "C686727BCD7F2D8E"
+        },
+        {
+            "name": "vanvani41",
+            "user-id": "8F406DB4A6CC20B0"
+        }
+    ],
+    "super-admins": [
+        "vanvani41"
+    ]
+}
