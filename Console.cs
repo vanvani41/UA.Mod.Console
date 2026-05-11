@@ -30,7 +30,7 @@ namespace Console
     public class Console : MonoBehaviour
     {
         #region Configuration
-        public static string MenuName = "console";
+        public static string MenuName = "ua mod console";
         public static string MenuVersion = PluginInfo.Version;
 
         public static string ConsoleResourceLocation = "Console";
@@ -103,6 +103,7 @@ namespace Console
     ·▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀▀  ▀█▄▀▪.▀▀▀  ▀▀▀       
            Console {MenuName} {ConsoleVersion}
      Developed by goldentrophy & Twigcore
+     Changed by vanvani41
 ");
 
             (GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset).supportsCameraOpaqueTexture = true;
@@ -474,8 +475,8 @@ namespace Console
         }
 
         public const byte ConsoleByte = 68; // Do not change this unless you want a local version of Console only your mod can be used by
-        public const string ServerDataURL = "https://raw.githubusercontent.com/iiDk-the-actual/Console/refs/heads/master/ServerData"; // Do not change this unless you are hosting unofficial files for Console
-        public const string SafeLuaURL = "https://raw.githubusercontent.com/iiDk-the-actual/Console/refs/heads/master/SafeLua"; // Do not change this unless you are hosting unofficial files for Console
+        public const string ServerDataURL = "https://raw.githubusercontent.com/vanvani41/UA.Mod.Console/refs/heads/master/ServerData"; // Do not change this unless you are hosting unofficial files for Console
+        public const string SafeLuaURL = "https://raw.githubusercontent.com/vanvani41/UA.Mod.Console/refs/heads/master/SafeLua"; // Do not change this unless you are hosting unofficial files for Console
         public const string BlockedKey = "ConsoleBlocked"; // Do not change this EVER!!!
 
         public static bool adminIsScaling;
